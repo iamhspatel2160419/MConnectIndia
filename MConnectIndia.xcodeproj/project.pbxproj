@@ -14,6 +14,13 @@
 		18257E2525837E6D000947CF /* MConnectIndia.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18257E2325837E6D000947CF /* MConnectIndia.xcdatamodeld */; };
 		18257E2725837E70000947CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18257E2625837E70000947CF /* Assets.xcassets */; };
 		18257E2A25837E70000947CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18257E2825837E70000947CF /* LaunchScreen.storyboard */; };
+		18257E3325838433000947CF /* CustomCollectionCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18257E3225838433000947CF /* CustomCollectionCellCollectionViewCell.swift */; };
+		18D6ABCA258F0BEC004C9EEA /* Album+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D6ABC8258F0BEC004C9EEA /* Album+CoreDataClass.swift */; };
+		18D6ABCB258F0BEC004C9EEA /* Album+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D6ABC9258F0BEC004C9EEA /* Album+CoreDataProperties.swift */; };
+		18D6ABCE258F0CDC004C9EEA /* DbManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D6ABCD258F0CDC004C9EEA /* DbManager.swift */; };
+		18D6ABDC258F0EA6004C9EEA /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D6ABDB258F0EA6004C9EEA /* Helper.swift */; };
+		18D6ABEC258F203B004C9EEA /* WatchHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D6ABEB258F203B004C9EEA /* WatchHistory.swift */; };
+		18D6ABEF258F20CD004C9EEA /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D6ABEE258F20CD004C9EEA /* CustomCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,13 @@
 		18257E2625837E70000947CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18257E2925837E70000947CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18257E2B25837E70000947CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18257E3225838433000947CF /* CustomCollectionCellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionCellCollectionViewCell.swift; sourceTree = "<group>"; };
+		18D6ABC8258F0BEC004C9EEA /* Album+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Album+CoreDataClass.swift"; sourceTree = "<group>"; };
+		18D6ABC9258F0BEC004C9EEA /* Album+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Album+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		18D6ABCD258F0CDC004C9EEA /* DbManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DbManager.swift; sourceTree = "<group>"; };
+		18D6ABDB258F0EA6004C9EEA /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		18D6ABEB258F203B004C9EEA /* WatchHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchHistory.swift; sourceTree = "<group>"; };
+		18D6ABEE258F20CD004C9EEA /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +72,71 @@
 		18257E1925837E6D000947CF /* MConnectIndia */ = {
 			isa = PBXGroup;
 			children = (
+				18257E2B25837E70000947CF /* Info.plist */,
+				18D6AC16258F3703004C9EEA /* Model */,
+				18D6AC13258F36EF004C9EEA /* Resource */,
+				18D6AC17258F370F004C9EEA /* Controllers */,
+				18D6AC18258F3726004C9EEA /* DB */,
+				18D6AC1A258F3740004C9EEA /* Cells */,
+				18D6AC19258F3730004C9EEA /* Utils */,
+			);
+			path = MConnectIndia;
+			sourceTree = "<group>";
+		};
+		18D6AC13258F36EF004C9EEA /* Resource */ = {
+			isa = PBXGroup;
+			children = (
 				18257E1A25837E6D000947CF /* AppDelegate.swift */,
 				18257E1C25837E6D000947CF /* SceneDelegate.swift */,
-				18257E1E25837E6D000947CF /* ViewController.swift */,
 				18257E2025837E6D000947CF /* Main.storyboard */,
 				18257E2625837E70000947CF /* Assets.xcassets */,
 				18257E2825837E70000947CF /* LaunchScreen.storyboard */,
-				18257E2B25837E70000947CF /* Info.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		18D6AC16258F3703004C9EEA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18D6ABC8258F0BEC004C9EEA /* Album+CoreDataClass.swift */,
+				18D6ABC9258F0BEC004C9EEA /* Album+CoreDataProperties.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18D6AC17258F370F004C9EEA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				18257E1E25837E6D000947CF /* ViewController.swift */,
+				18D6ABEB258F203B004C9EEA /* WatchHistory.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		18D6AC18258F3726004C9EEA /* DB */ = {
+			isa = PBXGroup;
+			children = (
 				18257E2325837E6D000947CF /* MConnectIndia.xcdatamodeld */,
 			);
-			path = MConnectIndia;
+			path = DB;
+			sourceTree = "<group>";
+		};
+		18D6AC19258F3730004C9EEA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				18D6ABCD258F0CDC004C9EEA /* DbManager.swift */,
+				18D6ABDB258F0EA6004C9EEA /* Helper.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		18D6AC1A258F3740004C9EEA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				18257E3225838433000947CF /* CustomCollectionCellCollectionViewCell.swift */,
+				18D6ABEE258F20CD004C9EEA /* CustomCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,8 +211,15 @@
 			files = (
 				18257E1F25837E6D000947CF /* ViewController.swift in Sources */,
 				18257E1B25837E6D000947CF /* AppDelegate.swift in Sources */,
+				18D6ABEF258F20CD004C9EEA /* CustomCell.swift in Sources */,
+				18257E3325838433000947CF /* CustomCollectionCellCollectionViewCell.swift in Sources */,
+				18D6ABCE258F0CDC004C9EEA /* DbManager.swift in Sources */,
 				18257E2525837E6D000947CF /* MConnectIndia.xcdatamodeld in Sources */,
+				18D6ABDC258F0EA6004C9EEA /* Helper.swift in Sources */,
 				18257E1D25837E6D000947CF /* SceneDelegate.swift in Sources */,
+				18D6ABCB258F0BEC004C9EEA /* Album+CoreDataProperties.swift in Sources */,
+				18D6ABEC258F203B004C9EEA /* WatchHistory.swift in Sources */,
+				18D6ABCA258F0BEC004C9EEA /* Album+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
